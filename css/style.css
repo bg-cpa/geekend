@@ -1,5 +1,4 @@
-@import 'framework.min.css';
-/* THIS IS A FREE VERSION OF STARTUP! */
+@import 'framework.css';
 /* 
 	Table of contents:
 	1. Common styles
@@ -19,13 +18,14 @@
 	15. Ecommerce
 	16. Applications
 */
+
 /* 1. Common styles */
 body {
-  font-family: DM Sans, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #1E0E62;
+  color: #000;
   -webkit-font-smoothing: antialiased;
 }
 body.dev {
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-margin-after: 0;
   margin: 0;
   font-weight: 700;
-  font-family: DM Sans, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
 }
 
 h1, h2 {
@@ -763,7 +763,7 @@ b, strong {
   width: 4px;
   height: 4px;
   border-radius: 100%;
-  background: #4C5A6B;
+  background: #f4ede2;
 }
 @media (max-width: 575.98px) {
   .ecommerce_2 .product {
