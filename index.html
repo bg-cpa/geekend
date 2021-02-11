@@ -43,14 +43,18 @@
 				</p>
 				<img src="uploads/logo.png" alt="Geek Out Huntsville" style="max-width:200px;">
 				<div class="mt-5">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="https://sendy.newgazette.co/subscribe" method="POST" accept-charset="utf-8">
 						<fieldset>
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="appendedtext"></label>
 						  <div class="col-md-5 pl-0">
 							<div class="input-group">
-							  <input id="appendedtext" name="appendedtext" class="form-control input radius4 border-action-1" placeholder="buzz@moon.com" type="text">
-							  <button class="btn action-1" style="border-radius:0 4px 4px 0; border-left:0px;">
+							  <input id="email" name="email" class="form-control input radius4 border-action-1" placeholder="buzz@moon.com" type="email" required>
+							  <div style="display:none;">
+								<input type="text" name="hp" id="hp"/>
+							  </div>
+							  <input type="hidden" name="list" value="NpPpTMfUAY3MpXjrK7z3hA"/>
+							  <input type="hidden" name="subform" value="yes"/>
+							  <button type="submit" name="submit" id="submit" class="btn action-1" style="border-radius:0 4px 4px 0; border-left:0px;">
 								<strong class="mr-4">Sign up</strong><strong class="f-26">&rarr;</strong>	
 							</button>
 							</div>
@@ -119,29 +123,30 @@
 								</p>
 							</div>
 						</div>
+
+						<div class="mt-5">
+
+
+							<form class="form-horizontal" id="form" action="https://sendy.newgazette.co/subscribe" method="POST" accept-charset="utf-8">
+								<fieldset>
+									  <input id="email" name="email" class="form-control input radius4 border-action-1 mb-3" style="max-width:310px;" placeholder="neil@moon.com" type="email" required> 
+									  <div style="display:none;">
+										<input type="text" name="hp" id="hp"/>
+									  </div>
+									  <input type="hidden" name="list" value="NpPpTMfUAY3MpXjrK7z3hA"/>
+									  <input type="hidden" name="subform" value="yes"/>
+									  <br> 
+									  <button type="submit" name="submit" id="submit" class="btn action-1" style="border-radius:4px;">
+										<strong class="mr-4">Cancel boring weekends</strong><strong class="f-26">&rarr;</strong>	
+									  </button>
+								</fieldset>
+								</form>
+						</div>
+
 					</div>
-					<div class="mt-5">
-						<input id="appendedtext" name="appendedtext" class="form-control input radius4 border-action-1 mb-3" style="max-width:310px;" placeholder="neil@moon.com" type="text">
-						<br>
-						<button class="btn action-1" style="border-radius:4px;">
-							<strong class="mr-4">Cancel boring weekends</strong><strong class="f-26">&rarr;</strong>	
-						</button>
-					</div>
+
 				</section>
 
-		<!-- forms alerts -->
-		<div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			Thanks for your message!
-		</div>
-		<div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			Please, fill in required fields.
-		</div>
-		<div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<div class="message">An error occurred while sending data :( Please, check if your hosting supports PHP and check how to set form data sending <a href="https://designmodo.com/startup/documentation/#form-handler" target="_blank" class="link color-transparent-white">here</a>.</div>
-		</div>
 
 		<!-- Bootstrap 4.5.2 JS -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
